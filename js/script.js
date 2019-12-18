@@ -26,12 +26,12 @@ while (isNaN(eta)) {
 document.getElementById('eta-viaggiatore').innerHTML = eta;
 // prezzo biglietto o.21
 var costoAlKm = 0.21;
-function idcarte() {
+
   var carta1 = 000;
   var carta2 = 001;
-}
+
 var cartaSconto =prompt("inserisca la sua carta sconto");
-if (cartaSconto = idcarte){
+if ( cartaSconto == carta1 || cartaSconto == carta2){
   var scontoAggiuntivo = (distanza * 0.21)*5/100;
   console.log(scontoAggiuntivo);
 }else{
