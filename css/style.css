@@ -3,4 +3,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+}
+
+.dati-viaggiatore{
+  margin: 20% 0;
 }
