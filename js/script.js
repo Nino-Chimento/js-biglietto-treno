@@ -6,6 +6,7 @@
 
 // numero di km
 var distanza = parseInt(prompt("Salve quanti km desidera percorrere?"));
+
 console.log(distanza);
 // eta viaggiaotre
 var eta = parseInt(prompt("Potrebb indicarmi la su età?"));
@@ -14,14 +15,18 @@ console.log(eta);
 var costoAlKm = 0.21;
 // junior 20%
 if (eta <= 18) {
-var scontoJunior = ((distanza * 0.21) *20) / 100;
-console.log(scontoJunior);
+  var scontoJunior = ((distanza * 0.21) *20) / 100;
+  console.log(scontoJunior);
+  var prezzoFinaleJunior = (distanza * 0.21) - scontoJunior;
+  console.log(prezzoFinaleJunior);
 } else if (eta>= 65) {
-  var scontoSenior = (distanza*0.21*40/100);
-  console.log(scontoSenior);
+   var scontoSenior = (distanza*0.21*40/100);
+   console.log(scontoSenior);
+   var prezzoFinaleSenior = (distanza * 0.21) - scontoSenior;
+   console.log(prezzoFinaleSenior);
 }else {
-  var prezzoPieno = distanza * 0.21;
-  console.log(prezzoPieno);
+   var prezzoPieno = distanza * 0.21;
+   console.log(prezzoPieno);
 }
 
 // senior 40%
