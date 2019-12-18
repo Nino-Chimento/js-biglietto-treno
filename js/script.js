@@ -6,11 +6,19 @@
 
 // numero di km
 var distanza = parseInt(prompt("Salve quanti km desidera percorrere?"));
-
+if (isNaN(distanza)) {
+  alert("inserisci un numero grazie");
+  var distanza = parseInt(prompt("Salve quanti km desidera percorrere?"));
+}
 console.log(distanza);
+
 // eta viaggiaotre
 var eta = parseInt(prompt("Potrebb indicarmi la su età?"));
 console.log(eta);
+if (isNaN(eta)) {
+  alert("inserisca la sua eta grazie");
+  var eta = parseInt(prompt("Potrebb indicarmi la su età?"));
+}
 // prezzo biglietto o.21
 var costoAlKm = 0.21;
 // junior 20%
