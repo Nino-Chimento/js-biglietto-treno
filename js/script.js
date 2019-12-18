@@ -6,7 +6,7 @@
 
 // numero di km
 var distanza = parseInt(prompt("Salve quanti km desidera percorrere?"));
-if (isNaN(distanza)) {
+while (isNaN(distanza)) {
   alert("inserisci un numero grazie");
   var distanza = parseInt(prompt("Salve quanti km desidera percorrere?"));
 }
@@ -15,7 +15,7 @@ document.getElementById('destinazione-viaggiatore').innerHTML = distanza
 // eta viaggiaotre
 var eta = parseInt(prompt("Potrebb indicarmi la su età?"));
 console.log(eta);
-if (isNaN(eta)) {
+while (isNaN(eta)) {
   alert("inserisca la sua eta grazie");
   var eta = parseInt(prompt("Potrebb indicarmi la su età?"));
 }
