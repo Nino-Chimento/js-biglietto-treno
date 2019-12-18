@@ -28,14 +28,19 @@ if (eta <= 18) {
   console.log(scontoJunior);
   var prezzoFinaleJunior = (distanza * 0.21) - scontoJunior;
   console.log(prezzoFinaleJunior);
+  document.getElementById('prezzo-viaggiatore').innerHTML = prezzoFinaleJunior;
+
 } else if (eta>= 65) {
    var scontoSenior = (distanza*0.21*40/100);
    console.log(scontoSenior);
    var prezzoFinaleSenior = (distanza * 0.21) - scontoSenior;
    console.log(prezzoFinaleSenior);
+   document.getElementById('prezzo-viaggiatore').innerHTML = prezzoFinaleSenior;
+
 }else {
    var prezzoPieno = distanza * 0.21;
    console.log(prezzoPieno);
+   document.getElementById('prezzo-viaggiatore').innerHTML = prezzoPieno;
 }
 
 // senior 40%
