@@ -32,13 +32,16 @@ function idcarte() {
 }
 var cartaSconto =prompt("inserisca la sua carta sconto");
 if (cartaSconto = idcarte){
-  alert("nino");
+  var scontoAggiuntivo = (distanza * 0.21)*5/100;
+  console.log(scontoAggiuntivo);
+}else{
+  var scontoAggiuntivo = 0;
 }
 // junior 20%
 if (eta <= 18) {
   var scontoJunior = ((distanza * 0.21) *20) / 100;
   console.log(scontoJunior);
-  var prezzoFinaleJunior = (distanza * 0.21) - scontoJunior;
+  var prezzoFinaleJunior = (distanza * 0.21) - scontoJunior - scontoAggiuntivo;
   console.log(prezzoFinaleJunior);
   document.getElementById('prezzo-viaggiatore').innerHTML = prezzoFinaleJunior;
 
