@@ -11,7 +11,7 @@ if (isNaN(distanza)) {
   var distanza = parseInt(prompt("Salve quanti km desidera percorrere?"));
 }
 console.log(distanza);
-
+document.getElementById('destinazione-viaggiatore').innerHTML = distanza
 // eta viaggiaotre
 var eta = parseInt(prompt("Potrebb indicarmi la su età?"));
 console.log(eta);
@@ -19,6 +19,7 @@ if (isNaN(eta)) {
   alert("inserisca la sua eta grazie");
   var eta = parseInt(prompt("Potrebb indicarmi la su età?"));
 }
+document.getElementById('eta-viaggiatore').innerHTML = eta
 // prezzo biglietto o.21
 var costoAlKm = 0.21;
 // junior 20%
